@@ -3,6 +3,8 @@ int main(){
 
 //DESENVOLVENDO A LÓGICA DO JOGO
 // SUPER TRUNFO - INICIANTE
+// Desenvolvedores: Telmo F. Rodrigues e Helder F. Rodrigues
+// Código testado e funcional!
 //Variáveis com terminação em 1 são referentes a Carta 1 e com terminação 2 referentes a Carta 2
     
 char estado1[3]; // Variável para armazenar apenas a sigla do estado
