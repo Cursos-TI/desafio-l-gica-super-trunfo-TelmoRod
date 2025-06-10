@@ -41,8 +41,8 @@ printf("Para iniciarmos, insira as informações da PRIMEIRA CIDADE \n \n");
 //Iniciando coleta de informações da PRIMEIRA CARTA de cidade ---------------------------------------------------------------------------------------------------------------
 
 // LETRA DO ESTADO
-printf("Digite a sigla que representa o estado da primeira cidade. Exemplo: RJ SP MG");
-scanf("%2s\n", &estado1); //%2 para armazenar apenas 2 caracteres
+printf("Digite a sigla que representa o estado da primeira cidade. Exemplo: RJ SP MG \n");
+scanf("%2s", &estado1); //%2 para armazenar apenas 2 caracteres
 printf("\n");
 
 // CÓDIGO DA CIDADE
@@ -101,8 +101,8 @@ printf("\n \n");
 printf("Agora, vamos iniciar o cadastro da SEGUNDA CARTA de Cidade!\n \n");
 
 // LETRA DO ESTADO
-printf("Digite a sigla que representa o estado da segunda cidade. Exemplo: RJ SP MG");
-scanf("%2s\n", &estado2); //%2 para armazenar apenas 2 caracteres
+printf("Digite a sigla que representa o estado da segunda cidade. Exemplo: RJ SP MG. \n");
+scanf("%2s", &estado2); //%2 para armazenar apenas 2 caracteres
 printf("\n");
 
 // CÓDIGO DA CIDADE
@@ -163,10 +163,10 @@ printf("Comparação de cartas (Atributo: População): \n \n");
 
 printf("Carta 1 - %s (%s): %d: \n", cidade1, estado1, populacao1);
 printf("Carta 2 - %s (%s): %d: \n", cidade2, estado2, populacao2);
-    if (população1 > populacao2){
+    if (populacao1 > populacao2){
             printf("Carta 1 (%s) venceu!\n", cidade1);
        }
-     if (população1 < populacao2){
+     if (populacao1 < populacao2){
             printf("Carta 2 (%s) venceu!\n", cidade2);
        }
         else {
