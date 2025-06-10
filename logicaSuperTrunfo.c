@@ -3,12 +3,13 @@ int main(){
 
 //DESENVOLVENDO A LÓGICA DO JOGO
 // SUPER TRUNFO - INICIANTE
+//Variáveis com terminação em 1 são referentes a Carta 1 e com terminação 2 referentes a Carta 2
     
-char estado1[0];
-char estado2[0];
+char estado1[3]; // Variável para armazenar apenas a sigla do estado
+char estado2[3]; // Variável para armazenar apenas a sigla do estado
 //----------------
-char codigo1[96]; //codigo deve conter a letra do estado inicialmente e depois os dois digitos de número. Ex: A01, B02, C03
-char codigo2[1]; //codigo deve conter a letra do estado inicialmente e depois os dois digitos de número. Ex: A01, B02, C03
+char codigo1[3]; //codigo deve conter dois digitos para ficar mais claro e simples
+char codigo2[3]; //codigo deve conter dois digitos para ficar mais claro e simples
 //----------------
 char cidade1[30]; //string
 char cidade2[30]; //string
@@ -40,15 +41,14 @@ printf("Para iniciarmos, insira as informações da PRIMEIRA CIDADE \n \n");
 //Iniciando coleta de informações da PRIMEIRA CARTA de cidade ---------------------------------------------------------------------------------------------------------------
 
 // LETRA DO ESTADO
-printf("Digite uma letra de 'A' até 'H' que represente o Estado da primeira cidade:");
-scanf("%s.1\n", &estado1);
+printf("Digite a sigla que representa o estado da primeira cidade. Exemplo: RJ SP MG");
+scanf("%2s\n", &estado1); //%2 para armazenar apenas 2 caracteres
 printf("\n");
 
-// CÓDIGO DE 1 A 4
-printf("Agora, vamos incluir o código da primeira cidade. \n");
-printf("O código deve conter a LETRA escolhida para o Estado seguida de 01, 02, 03 ou 04. Exemplo: H01, B03. \n");
-printf("Seguindo a instrução acima, digite o código da primeira cidade:");
-scanf("%s.3", &codigo1);
+// CÓDIGO DA CIDADE
+printf("Vamos incluir um código para a cidade, ele deve conter apenas dois digitos.\n");
+printf("Digite o código da primeira cidade:");
+scanf("%2s", &codigo1);
 printf("\n");
 
 //NOME DA CIDADE
@@ -101,15 +101,14 @@ printf("\n \n");
 printf("Agora, vamos iniciar o cadastro da SEGUNDA CARTA de Cidade!\n \n");
 
 // LETRA DO ESTADO
-printf("Digite uma letra de 'A' até 'H' que represente o Estado da segunda cidade:");
-scanf("%s.1\n", &estado2);
+printf("Digite a sigla que representa o estado da segunda cidade. Exemplo: RJ SP MG");
+scanf("%2s\n", &estado2); //%2 para armazenar apenas 2 caracteres
 printf("\n");
 
-// CÓDIGO DE 1 A 4
-printf("Agora, vamos incluir o código da segunda cidade. \n");
-printf("O código deve conter a LETRA escolhida para o Estado seguida de 01, 02, 03 ou 04. Exemplo: H01, B03. \n");
-printf("Seguindo a instrução acima, digite o código da segunda cidade:");
-scanf("%s.3", &codigo2);
+// CÓDIGO DA CIDADE
+printf("Vamos incluir um código para a cidade, ele deve conter apenas dois digitos.\n");
+printf("Digite o código da segunda cidade:");
+scanf("%2s", &codigo2);
 printf("\n");
 
 //NOME DA CIDADE
